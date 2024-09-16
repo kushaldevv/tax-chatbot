@@ -1,0 +1,88 @@
+version: "3.1"
+
+intents:
+  - ask_service
+  - personal_filing
+  - business_filing
+  - payroll_services
+  - bookkeeping
+  - tax_preparation
+  - financial_statements
+  - ask_tax_rate
+  - inquire_filing_deadline
+  - request_refund_status
+  - inquire_deductions
+  - greet
+  - goodbye
+
+entities:
+  - tax_form
+  - state
+  - service_type
+  - financial_report
+  - tax_year
+  - deduction_type
+
+slots:
+  tax_form:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: tax_form
+  state:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: state
+  service_type:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: service_type
+  financial_report:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: financial_report
+  tax_year:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: tax_year
+  deduction_type:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: deduction_type
+
+responses:
+  utter_ask_service:
+    - text: "We offer a variety of services. What type of service are you looking for?"
+  utter_personal_filing:
+    - text: "We can assist with personal tax filing, including Form 1040 and any state returns. Which form or state return do you need help with?"
+  utter_business_filing:
+    - text: "We provide tax services for businesses, including Corporate 1120/1120S, Partnership 1065, and Nonprofit 990. Which form would you like assistance with?"
+  utter_payroll_services:
+    - text: "Our payroll services include filing Employer Taxes (940, 941, 944), and year-end W2/1099 filing. What payroll service do you need?"
+  utter_bookkeeping:
+    - text: "We can help with managing bills, invoicing, bank reconciliation, and more. What specific bookkeeping service do you need?"
+  utter_tax_preparation:
+    - text: "We offer tax preparation services, including sales tax filing. Would you like help with state sales tax or another service?"
+  utter_financial_statements:
+    - text: "We can generate balance sheets, profit and loss statements, and cash flow reports. Which report do you need?"
+  utter_ask_tax_rate:
+    - text: "The tax rate depends on your income bracket and filing status. Can you provide more details about your income and filing status?"
+  utter_filing_deadline:
+    - text: "The filing deadline for federal taxes is typically April 15th, unless it falls on a weekend or holiday. Do you need help with state-specific deadlines?"
+  utter_request_refund_status:
+    - text: "You can check your refund status on the IRS website using their 'Where's My Refund?' tool. Would you like a link to the tool?"
+  utter_deductions_info:
+    - text: "There are various deductions available depending on your situation. Are you asking about standard deductions or itemized deductions?"
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+  utter_goodbye:
+    - text: "Goodbye! Feel free to reach out again if you need further assistance."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

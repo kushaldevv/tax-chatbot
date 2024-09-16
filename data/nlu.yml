@@ -1,0 +1,171 @@
+version: "3.1"
+
+nlu:
+- intent: ask_service
+  examples: |
+      - What services do you offer?
+      - Can you help me with taxes?
+      - What can you help me with?
+      - Do you provide accounting services?
+      - What kinds of tax services do you offer?
+      - Can you handle business taxes?
+      - Can you help me file my taxes?
+      - What types of bookkeeping services do you provide?
+      - Do you offer payroll services?
+      - How can you assist me with tax filing?
+
+- intent: personal_filing
+  examples: |
+    - I need help with my personal taxes.
+    - Can you file my Form 1040?
+    - I need to file my state return.
+    - How do I file taxes for 2023?
+    - Help me with my personal income tax.
+    - Can you help me with Form 1040 for my individual return?
+    - What are the steps to file my personal income tax?
+    - Do you help with state tax returns?
+    - Can you file my taxes for this year?
+    - I need assistance with my individual tax return.
+
+- intent: business_filing
+  examples: |
+    - I need help with my business taxes.
+    - Can you file Form 1120 for my corporation?
+    - Can you assist with 1065 for my partnership?
+    - I need to file a nonprofit tax return.
+    - How do I file taxes for my company?
+    - Can you help me file 1120S for my S Corporation?
+    - I need to file my business tax return for 2023.
+    - What forms do you handle for business tax filing?
+    - Can you assist with my corporate tax filing?
+    - Do you handle nonprofit tax forms like 990?
+
+- intent: payroll_services
+  examples: |
+    - Can you help me with payroll?
+    - I need to file my employer taxes.
+    - Help with filing 941 for my employees.
+    - Do you provide W2 filing services?
+    - How do I file payroll taxes?
+    - Can you assist with 940 employer tax filings?
+    - What payroll services do you offer?
+    - Do you provide payroll processing and tax filing?
+    - Can you help with year-end payroll reports like W2s?
+    - I need assistance filing my 944 for small business payroll.
+
+- intent: bookkeeping
+  examples: |
+    - Can you manage my bookkeeping?
+    - I need help with invoicing my customers.
+    - Can you reconcile my bank accounts?
+    - I need bookkeeping services.
+    - Can you help me with managing bills and invoices?
+    - How do you handle bookkeeping for small businesses?
+    - Can you prepare my financial records and books?
+    - Do you offer monthly bookkeeping services?
+    - I need help keeping track of my expenses and revenue.
+    - What bookkeeping services do you provide for small businesses?
+
+- intent: tax_preparation
+  examples: |
+    - I need help preparing my taxes.
+    - Can you help with sales tax preparation?
+    - I need assistance with tax preparation.
+    - How do I prepare my taxes?
+    - Can you help me prepare my state tax return?
+    - What do I need to do for tax preparation?
+    - I need help filing my taxes this year.
+    - Do you provide assistance with tax preparation?
+    - How do I get started with preparing my taxes?
+    - What steps are involved in preparing taxes?
+
+- intent: financial_statements
+  examples: |
+    - Can you generate a balance sheet?
+    - I need a profit and loss statement.
+    - Can you prepare my cash flow report?
+    - I need financial statements for my business.
+    - Can you create a financial report for my company?
+    - How can I get a balance sheet for my business?
+    - I need a P&L statement for my small business.
+    - Can you prepare my end-of-year financials?
+    - What kind of financial reports do you prepare?
+    - Can you generate a cash flow statement for me?
+
+- intent: ask_tax_rate
+  examples: |
+    - What is the tax rate for 2023?
+    - Can you tell me my tax rate?
+    - How much tax do I owe based on my income?
+    - What's the tax rate for the highest income bracket?
+    - What tax rate do I pay on my earnings?
+    - Can you explain the tax rates for this year?
+    - How is the tax rate determined?
+    - What are the federal tax rates for this year?
+    - Do you know the tax rate for 2023?
+    - What tax rate applies to my income level?
+
+- intent: inquire_filing_deadline
+  examples: |
+    - What is the deadline for filing taxes?
+    - When are taxes due this year?
+    - Can you tell me the tax filing deadline for this year?
+    - When is the deadline for state tax filing?
+    - When is the federal tax filing deadline?
+    - How much time do I have to file my taxes?
+    - When is the last day to file taxes?
+    - When is the deadline for filing corporate taxes?
+    - Do I have to file my taxes by April 15th?
+    - When is the final date to file individual tax returns?
+
+- intent: request_refund_status
+  examples: |
+    - How can I check my refund status?
+    - Where is my tax refund?
+    - How do I know if my refund has been processed?
+    - Can you check my refund status?
+    - How do I find out the status of my refund?
+    - When will my tax refund arrive?
+    - How long does it take to get my refund?
+    - Where can I check my tax refund status?
+    - What’s the status of my IRS refund?
+    - How do I track my refund?
+
+- intent: inquire_deductions
+  examples: |
+    - What deductions can I claim this year?
+    - Can I claim the standard deduction?
+    - What are the itemized deductions I can claim?
+    - Can you explain the tax deductions I can take?
+    - What deductions are available for businesses?
+    - Can I deduct medical expenses?
+    - Are charitable donations tax-deductible?
+    - What can I write off on my taxes?
+    - How do deductions reduce my taxable income?
+    - What deductions are available for self-employed individuals?
+
+- intent: greet
+  examples: |
+    - Hello!
+    - Hi there
+    - Good morning
+    - Hey, how are you?
+    - Hi!
+    - Hello, how can you help me today?
+    - Good afternoon!
+    - Hey, I need some help.
+    - Hi, what services do you offer?
+    - Hello, I have a question.
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - See you later
+    - Thanks, bye!
+    - Talk to you soon!
+    - Have a nice day!
+    - Bye, talk to you later!
+    - Thanks for the help, goodbye!
+    - Bye for now!
+    - Talk to you again soon.
+    - Goodbye, and thanks for your help!

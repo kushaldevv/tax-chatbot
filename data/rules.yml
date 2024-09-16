@@ -1,0 +1,54 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+# - rule: Say 'I am a bot' anytime the user challenges
+#   steps:
+#   - intent: bot_challenge
+#   - action: utter_iamabot
+
+# - rule: Activate form for personal filing
+#   steps:
+#   - intent: personal_filing
+#   - action: personal_filing_form
+#   - active_loop: personal_filing_form
+
+# - rule: Activate form for business filing
+#   steps:
+#   - intent: business_filing
+#   - action: business_filing_form
+#   - active_loop: business_filing_form
+
+# - rule: Activate form for payroll services
+#   steps:
+#   - intent: payroll_services
+#   - action: payroll_services_form
+#   - active_loop: payroll_services_form
+
+# - rule: Activate form for bookkeeping
+#   steps:
+#   - intent: bookkeeping
+#   - action: bookkeeping_form
+#   - active_loop: bookkeeping_form
+
+# - rule: Activate form for tax preparation
+#   steps:
+#   - intent: tax_preparation
+#   - action: tax_preparation_form
+#   - active_loop: tax_preparation_form
+
+# - rule: Activate form for financial statements
+#   steps:
+#   - intent: financial_statements
+#   - action: financial_statements_form
+#   - active_loop: financial_statements_form
